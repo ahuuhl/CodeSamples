@@ -4,118 +4,307 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <f:view>
         <af:document title="Components" id="d1">
-            <af:form id="f1">
+            <af:form id="f1" usesUpload="true">
                 <af:pageTemplate viewId="/oracle/templates/threeColumnTemplate.jspx" id="pt1">
                     <f:facet name="center">
-                        <af:panelGridLayout id="pgl1">
-                            <af:gridRow marginTop="5px" height="auto" id="gr1">
-                                <af:gridCell marginStart="5px" width="50%" id="gc1">
-                                    <af:commandButton text="Button" id="cb1"/>
-                                    A Button can be attached to an ActionListener.
-                                </af:gridCell>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc2"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr2">
-                                <af:gridCell marginStart="5px" width="50%" id="gc3">
-                                    <af:goButton text="Button (go)" id="gb1" destination="http://www.oracle.com"/>
-                                    <af:outputText id="ot2" value="A Go Button has an attribute to configure the destination link." />
-                                </af:gridCell>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc4"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr3">
-                                <af:gridCell marginStart="5px" width="50%" id="gc5">
-                                    <af:resetButton text="Button (Reset)" id="rb1"/>
-                                    <af:outputText value="???" id="ot1"/>
-                                </af:gridCell>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc6"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr4">
-                                <af:gridCell marginStart="5px" width="50%" id="gc7">
-                                    <af:contextInfo id="ci1">
-                                        <af:showPopupBehavior align="beforeStart" triggerType="contextInfo"
-                                                              popupId="p1"/>
-                                    </af:contextInfo>
-                                </af:gridCell>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc8"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr5">
-                                <af:gridCell marginStart="5px" width="50%" id="gc9">
-                                    <af:icon id="i1" name="error"/>
-                                    <af:outputText value="Icons with predefined images" id="ot4"/>
-                                </af:gridCell>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc10"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr6">
-                                <af:gridCell marginStart="5px" width="50%" id="gc11">
-                                    <af:image source="http://www.oracle.com/ocom/groups/public/@ocom/documents/digitalasset/1527441.jpg"
-                                              shortDesc="Java Logo" id="i2"/>
-                                    <af:outputText value="A static image loaded from an URL" id="ot5"/>
-                                </af:gridCell>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc12"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr7">
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc14">
-                                    <af:activeImage source="http://www.oracle.com/ocom/groups/public/@ocom/documents/digitalasset/1527465.jpg"
-                                                    id="ai1"/>
-                                    <af:outputText value="What is the difference to the above (besides the missing ALT attribute)?" id="ot6"/>
-                                </af:gridCell>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr8">
-                                <af:gridCell marginStart="5px" width="50%" id="gc15">
-                                    <af:goImageLink text="Image (Go) is an image with a destination URL." id="gil1" destination="http://www.oracle.com"
-                                                    icon="http://www.oracle.com/ocom/groups/public/@ocom/documents/digitalasset/1527441.jpg"/>
-                                </af:gridCell>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc16"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr9">
-                                <af:gridCell marginStart="5px" width="50%" id="gc17"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc18"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr10">
-                                <af:gridCell marginStart="5px" width="50%" id="gc19"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc20"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr11">
-                                <af:gridCell marginStart="5px" width="50%" id="gc21"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc22"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr12">
-                                <af:gridCell marginStart="5px" width="50%" id="gc23"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc24"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr13">
-                                <af:gridCell marginStart="5px" width="50%" id="gc25"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc26"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr14">
-                                <af:gridCell marginStart="5px" width="50%" id="gc27"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc28"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr15">
-                                <af:gridCell marginStart="5px" width="50%" id="gc29"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc30"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr16">
-                                <af:gridCell marginStart="5px" width="50%" id="gc31"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc32"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr17">
-                                <af:gridCell marginStart="5px" width="50%" id="gc33"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc34"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr18">
-                                <af:gridCell marginStart="5px" width="50%" id="gc35"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc36"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" height="auto" id="gr19">
-                                <af:gridCell marginStart="5px" width="50%" id="gc37"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc38"/>
-                            </af:gridRow>
-                            <af:gridRow marginTop="5px" marginBottom="5px" height="auto" id="gr20">
-                                <af:gridCell marginStart="5px" width="50%" id="gc39"/>
-                                <af:gridCell marginStart="5px" marginEnd="5px" width="50%" id="gc40"/>
-                            </af:gridRow>
-                        </af:panelGridLayout>
+
+                        <af:panelTabbed id="pt2">
+                            <af:showDetailItem text="Buttons&amp;Links" id="sdi1">
+                                <af:panelGroupLayout id="pgl2" layout="vertical">
+
+                                    <af:panelGroupLayout id="pgl3" layout="horizontal">
+                                        <af:commandButton text="Button" id="cb2"/>
+                                        A Button can be attached to an ActionListener.
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl4" layout="horizontal">
+                                        <af:goButton text="Button (go)" id="gb1" destination="http://www.oracle.com"/>
+                                        <af:outputText id="ot2"
+                                                   value="A Go Button has an attribute to configure the destination link."/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl5" layout="horizontal">
+                                        <af:resetButton text="Button (Reset)" id="rb1"/>
+                                        <af:outputText value="&quot;Button (Reset)&quot; - A button which resets the content of all editable components" id="ot1"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl6" layout="horizontal">
+                                        <af:contextInfo id="ci1">
+                                            <af:showPopupBehavior align="beforeStart" triggerType="contextInfo"
+                                                                  popupId="p1"/>
+                                        </af:contextInfo>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl7" layout="horizontal">
+                                        <af:icon id="i1" name="error"/>
+                                        <af:outputText value="Icons with predefined images" id="ot4"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl8" layout="horizontal">
+                                        <af:image source="http://www.oracle.com/ocom/groups/public/@ocom/documents/digitalasset/1527441.jpg"
+                                                  shortDesc="Java Logo" id="i2"/>
+                                        <af:outputText value="&quot;Image&quot; - A static image loaded from a URL" id="ot5"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl9" layout="horizontal">
+                                        <af:activeImage source="http://www.oracle.com/ocom/groups/public/@ocom/documents/digitalasset/1527465.jpg"
+                                                        id="ai1"/>
+                                        <af:outputText value="&quot;Image Active&quot; - same as &quot;Image&quot;, but but supports its source attribute being changed by active data"
+                                                       id="ot6"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl10" layout="horizontal">
+                                        <af:goImageLink text="&quot;Image (Go)&quot; - An image with a destination URL." id="gil1"
+                                                        destination="http://www.oracle.com"
+                                                        icon="http://www.oracle.com/ocom/groups/public/@ocom/documents/digitalasset/1527441.jpg"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl11" layout="horizontal">
+                                        <af:commandLink text="&quot;Command Link&quot; - can be attached to an ActionListener which fires when the link is pressed" id="cl1"/>
+                                    </af:panelGroupLayout>
+                                    
+                                    <af:panelGroupLayout id="pgl12" layout="horizontal">
+                                        <af:goLink text="&quot;Link (Go)&quot; - A link which redirects to a URL" id="gl1"
+                                                   destination="http://www.oracle.com"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl13">
+                                        <af:commandImageLink text="&quot;Link (Image)&quot; - An image link with an Action listener" id="cil1"
+                                                             icon="http://www.oracle.com/ocom/groups/public/@ocom/documents/digitalasset/1527465.jpg"/>
+                                    </af:panelGroupLayout>
+
+
+                                </af:panelGroupLayout>
+                            </af:showDetailItem>
+                            <af:showDetailItem text="Various" id="sdi3">
+                                <af:panelGroupLayout id="pgl1" layout="vertical">
+
+                                    <af:panelGroupLayout id="pgl14" layout="horizontal">
+                                        <af:media id="m1" standbyText="Please Wait ..."
+                                                  source="http://www.youtube.com/watch?v=ZAAxmg0ux-o&amp;feature=player_detailpage"
+                                                  player="windows" autostart="true" controls="all"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl15" layout="horizontal">
+                                        <af:progressIndicator id="pi1" value="1"/>
+                                        <af:outputText value="Progress Indicator" id="ot7"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl16" layout="horizontal">
+                                        <af:statusIndicator id="si1"/>
+                                        <af:outputText value="Status Indicator" id="ot8"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl17" layout="horizontal">
+                                        <af:breadCrumbs id="bc1">
+                                            <af:commandNavigationItem text="Step 1" id="cni1"/>
+                                            <af:commandNavigationItem text="Step 2" id="cni2"/>
+                                            <af:commandNavigationItem text="Step 3" id="cni3"/>
+                                        </af:breadCrumbs>
+                                        <af:outputText value="Bread Crumbs" id="ot9"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl18" layout="horizontal">
+                                        <af:train id="t1"/>
+                                        <af:outputText value="Train" id="ot10"/>
+                                    </af:panelGroupLayout>
+
+                                    <af:panelGroupLayout id="pgl19" layout="horizontal">
+                                        <af:trainButtonBar id="tbb1"/>
+                                        <af:outputText value="Train Button Bar" id="ot11"/>
+                                    </af:panelGroupLayout>
+
+                                </af:panelGroupLayout>
+                            </af:showDetailItem>
+
+                            <af:showDetailItem text="Selection" id="sdi2">
+                                <af:panelGroupLayout id="pgl20" layout="scroll">
+
+                                    <af:outputText id="ot98" value="&lt;af:selectBooleanCheckbox&gt;" />
+                                    <af:selectBooleanCheckbox text="Simple boolean checkbox" label="Label"
+                                                              id="sbc1"/>
+                                    <af:separator id="s1"/>
+
+                                    <af:outputText id="ot99" value="&lt;af:selectManyCheckbox&gt;" />
+                                    <af:selectManyCheckbox label="Label" id="smc1">
+                                        <af:selectItem label="First" value="1" id="si2"/>
+                                        <af:selectItem label="Second" value="2" id="si3"/>
+                                        <af:selectItem label="Third" value="3" id="si4"/>
+                                    </af:selectManyCheckbox>
+                                    <af:separator id="s2"/>
+
+                                    <af:outputText id="ot97" value="&lt;af:selectOneChoice&gt;" />
+                                    <af:selectOneChoice label="Label 1" id="soc1">
+                                        <af:selectItem label="First" value="1" id="si5"/>
+                                        <af:selectItem label="Second" value="2" id="si6"/>
+                                        <af:selectItem label="Third" value="3" id="si7"/>
+                                    </af:selectOneChoice>
+                                    <af:separator id="s3"/>
+
+                                    <af:outputText id="ot96" value="&lt;af:selectManyChoice&gt;" />
+                                    <af:selectManyChoice label="Label 1" id="smc2">
+                                        <af:selectItem label="First" value="1" id="si8"/>
+                                        <af:selectItem label="Second" value="2" id="si9"/>
+                                        <af:selectItem label="Third" value="3" id="si10"/>
+                                    </af:selectManyChoice>
+                                    <af:separator id="s4"/>
+
+                                    <af:goLink text="&lt;af:selectOneListbox&gt;" id="gl4"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectOneListbox.html"/>
+                                    <af:selectOneListbox label="Label 1" id="sol1">
+                                        <af:selectItem label="First" value="1" id="si11"/>
+                                        <af:selectItem label="Second" value="2" id="si12"/>
+                                        <af:selectItem label="Third" value="3" id="si13"/>
+                                    </af:selectOneListbox>
+                                    <af:separator id="s10"/>
+                                    
+                                    <af:goLink text="&lt;af:selectManyListbox&gt;" id="gl5"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectManyListbox.html"/>
+                                    <af:selectManyListbox label="Label 1" id="sml1">
+                                        <af:selectItem label="First" value="1" id="si14"/>
+                                        <af:selectItem label="Second" value="2" id="si15"/>
+                                        <af:selectItem label="Third" value="3" id="si16"/>
+                                    </af:selectManyListbox>
+                                    <af:separator id="s11"/>
+
+                                    <af:goLink text="&lt;af:selectOneRadio&gt;" id="gl51"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectOneRadio.html"/>
+                                    <af:selectOneRadio label="Label 1" id="sor1">
+                                        <af:selectItem label="First" value="1" id="si17"/>
+                                        <af:selectItem label="Second" value="2" id="si18"/>
+                                        <af:selectItem label="Third" value="3" id="si19"/>
+                                    </af:selectOneRadio>
+                                    <af:separator id="s12"/>
+
+                                    <af:goLink text="&lt;af:selectBooleanRadio&gt;" id="gl52"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectBooleanRadio.html"/>
+                                    <af:selectBooleanRadio text="1" label="First" id="sbr1"
+                                                           group="g1"/>
+                                    <af:selectBooleanRadio text="2" label="Second" id="sbr2"
+                                                           group="g1"/>
+                                    <af:selectBooleanRadio text="3" label="Third" id="sbr3"
+                                                           group="g1"/>
+
+                                </af:panelGroupLayout>
+                            </af:showDetailItem>
+
+                            <af:showDetailItem text="Advanced Selection" id="sdi24">
+                                <af:panelGroupLayout id="pgl211" layout="scroll">
+
+                                    <af:outputText id="ot95" value="&lt;af:chooseColor&gt;" />
+                                    <af:chooseColor id="cc1"/>
+                                    <af:outputText id="ot94" value="&lt;af:inputColor&gt;" />
+                                    <af:inputColor label="Label 1" id="ic1"/>
+                                    <af:separator id="s5"/>
+
+                                    <af:outputText id="ot93" value="&lt;af:chooseDate&gt;" />
+                                    <af:chooseDate id="cd1"/>
+                                    <af:outputText id="ot92" value="&lt;af:inputDate&gt;" />
+                                    <af:inputDate label="Label 1" id="id1"/>
+                                    <af:separator id="s6"/>
+
+                                    <af:outputText id="ot91" value="&lt;af:inputFile&gt;" />
+                                    <af:inputFile label="Label 1" id="if1"/>
+                                    <af:separator id="s7"/>
+
+                                    <af:goLink text="&lt;af:inputListOfValues&gt;" id="gl2"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputListOfValues.html"/>
+                                    <af:inputListOfValues label="Label 1" popupTitle="Search and Result Dialog"
+                                                          id="ilov1"/>
+                                    <af:separator id="s8"/>
+
+                                    <af:goLink text="&lt;af:inputComboboxListOfValues&gt;" id="gl3"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputComboboxListOfValues.html"/>
+                                    <af:inputComboboxListOfValues label="Label 1" popupTitle="Search and Result Dialog"
+                                                                  id="iclov1"/>
+                                    <af:separator id="s9"/>
+
+                                    <af:goLink text="&lt;af:selectManyShuttle&gt;" id="gl34"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectManyShuttle.html"/>
+                                    <af:selectManyShuttle label="Label 1" id="sms1">
+                                        <af:selectItem label="First" value="1" id="si20"/>
+                                        <af:selectItem label="Second" value="2" id="si21"/>
+                                        <af:selectItem label="Third" value="3" id="si22"/>
+                                    </af:selectManyShuttle>
+                                    <af:separator id="s95"/>
+
+                                    <af:goLink text="&lt;af:selectOrderShuttle&gt;" id="gl35"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectOrderShuttle.html"/>
+                                    <af:selectOrderShuttle label="Label 1" id="sos1">
+                                        <af:selectItem label="First" value="1" id="si23"/>
+                                        <af:selectItem label="Second" value="2" id="si24"/>
+                                        <af:selectItem label="Third" value="3" id="si25"/>
+                                    </af:selectOrderShuttle>
+
+                                </af:panelGroupLayout>
+                            </af:showDetailItem>
+
+                            <af:showDetailItem text="Text" id="sdi4">
+                                <af:panelGroupLayout id="pgl21" layout="scroll">
+
+                                    <af:goLink text="&lt;af:inputNumberSpinbox&gt;" id="gl40"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputNumberSpinbox.html"/>
+                                    <af:inputNumberSpinbox label="Age" id="ins1" value="42" minimum="1" maximum="130"/>
+                                    <af:separator id="s100"/>
+
+                                    <af:goLink text="&lt;af:inputNumberSlider&gt;" id="gl41"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputNumberSlider.html"/>
+                                    <af:inputNumberSlider label="Label 1" id="ins2"/>
+                                    <af:separator id="s110"/>
+
+                                    <af:goLink text="&lt;af:inputRangeSlider&gt;" id="gl42"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputRangeSlider.html"/>
+                                    <af:inputRangeSlider label="Label 1" id="irs1" orientation="vertical"/>
+                                    <af:separator id="s111"/>
+
+                                    <af:goLink text="&lt;af:inputText&gt;" id="gl6"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputText.html"/>
+                                    <af:inputText label="User" id="it1"/>
+                                    <af:inputText label="Password" id="it2" secret="true" />
+                                    <af:inputText label="Comment" id="it3" rows="3" />
+                                    <af:separator id="s101"/>
+
+                                    <af:goLink text="&lt;af:message&gt;" id="gl7"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_message.html"/>
+                                    <af:message id="m2" messageType="error" message="Fatal Error, shutting down ...."/>
+                                    <af:separator id="s102"/>
+
+                                    <af:goLink text="&lt;af:messages&gt;" id="gl8"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_messages.html"/>
+                                    <af:messages id="m3" text="Warning" message="Some warning message"/>
+                                    <af:separator id="s103"/>
+
+                                    <af:goLink text="&lt;af:outputText&gt;" id="gl9"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_outputText.html"/>
+                                    <af:outputText value="Simple output text" id="ot12"
+                                                   inlineStyle="font-size:15px; font-style:italic; font-weight:bold;"/>
+                                    <af:separator id="s104"/>
+
+                                    <af:goLink text="&lt;af:activeOutputText&gt;" id="gl10"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_activeOutputText.html"/>
+                                    <af:activeOutputText value="Like Simple output text, but allows server side change of the value" id="aot1"
+                                                         inlineStyle="color:Orange; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-style:oblique;"/>
+                                    <af:separator id="s105"/>
+
+                                    <af:goLink text="&lt;af:outputFormatted&gt;" id="gl11"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_outputFormatted.html"/>
+                                    <af:outputFormatted value="Output text which supports simple &lt;b&gt;HTML&lt;/b&gt; markup, like &lt;ol&gt; &lt;li&gt;b&lt;/li&gt; &lt;li&gt;li, ol, ul&lt;/li&gt; &lt;li&gt;...&lt;/li&gt; &lt;/ol&gt;" id="of1"/>
+                                    <af:separator id="s107"/>
+
+                                    <af:goLink text="&lt;af:outputLabel&gt;" id="gl12"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_outputLabel.html"/>
+                                    <af:outputLabel value="Separate label for input fields (used when the default label is not sufficient)" id="ol1"/>
+                                    <af:separator id="s108"/>
+
+                                    <af:goLink text="&lt;af:richTextEditor&gt;" id="gl13"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_richTextEditor.html"/>
+                                    <af:richTextEditor label="Label 1" id="rte1"/>
+
+                                </af:panelGroupLayout>
+                            </af:showDetailItem>
+
+                        </af:panelTabbed>
+
                     </f:facet>
                     <f:facet name="header"/>
                     <f:facet name="end"/>
@@ -124,6 +313,7 @@
                     <f:facet name="copyright"/>
                     <f:facet name="status"/>
                 </af:pageTemplate>
+
                 <af:popup childCreation="deferred" autoCancel="disabled" id="p1">
                     <af:outputText value="Contextual information" id="ot3"/>
                 </af:popup>
