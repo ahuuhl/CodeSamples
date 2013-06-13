@@ -2,25 +2,25 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
 
-    <af:panelGroupLayout id="pgl1" layout="vertical">
-    
-        <af:panelGroupLayout id="pgl14" layout="horizontal">
+    <af:panelGroupLayout id="pgl0" layout="vertical">
+
+        <af:panelGroupLayout id="pgl1" layout="horizontal">
             <af:media id="m1" standbyText="Please Wait ..."
                       source="http://www.youtube.com/watch?v=ZAAxmg0ux-o&amp;feature=player_detailpage"
                       player="windows" autostart="true" controls="all"/>
         </af:panelGroupLayout>
     
-        <af:panelGroupLayout id="pgl15" layout="horizontal">
+        <af:panelGroupLayout id="pgl2" layout="horizontal">
             <af:progressIndicator id="pi1" value="1"/>
             <af:outputText value="Progress Indicator" id="ot7"/>
         </af:panelGroupLayout>
     
-        <af:panelGroupLayout id="pgl16" layout="horizontal">
+        <af:panelGroupLayout id="pgl3" layout="horizontal">
             <af:statusIndicator id="si1"/>
             <af:outputText value="Status Indicator" id="ot8"/>
         </af:panelGroupLayout>
     
-        <af:panelGroupLayout id="pgl17" layout="horizontal">
+        <af:panelGroupLayout id="pgl4" layout="horizontal">
             <af:breadCrumbs id="bc1">
                 <af:commandNavigationItem text="Step 1" id="cni1"/>
                 <af:commandNavigationItem text="Step 2" id="cni2"/>
@@ -29,12 +29,12 @@
             <af:outputText value="Bread Crumbs" id="ot9"/>
         </af:panelGroupLayout>
     
-        <af:panelGroupLayout id="pgl18" layout="horizontal">
+        <af:panelGroupLayout id="pgl5" layout="horizontal">
             <af:train id="t1"/>
             <af:outputText value="Train" id="ot10"/>
         </af:panelGroupLayout>
     
-        <af:panelGroupLayout id="pgl19" layout="horizontal">
+        <af:panelGroupLayout id="pgl6" layout="horizontal">
             <af:trainButtonBar id="tbb1"/>
             <af:outputText value="Train Button Bar" id="ot11"/>
         </af:panelGroupLayout>

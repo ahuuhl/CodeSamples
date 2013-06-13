@@ -2,7 +2,7 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
           xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
 
-    <af:panelGroupLayout id="pgl211" layout="scroll">
+    <af:panelGroupLayout id="pgl1" layout="scroll">
     
         <af:outputText id="ot95" value="&lt;af:chooseColor&gt;" />
         <af:chooseColor id="cc1"/>

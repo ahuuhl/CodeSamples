@@ -9,24 +9,30 @@
                     <f:facet name="center">
 
                         <af:panelTabbed id="pt2">
+
+                            <!-- https://blogs.oracle.com/jheadstart/entry/avoid_use_of_jspinclude_where
+                                 When including page fragments, <jsp:include> technically works but should be
+                                 avoided (see above link), especially due to id conflicts.
+                                 Use <af:declarativeComponent> instead.
+                            -->
                             <af:showDetailItem text="Buttons&amp;Links" id="sdi1">
-                                <jsp:include page="/ButtonsAndLinks.jsff"/>
+                                <af:declarativeComponent id="dc0" viewId="/ButtonsAndLinks.jsff"/>
                             </af:showDetailItem>
 
                             <af:showDetailItem text="Various" id="sdi3">
-                                <jsp:include page="/Various.jsff"/>
+                                <af:declarativeComponent id="dc1" viewId="/Various.jsff"/>
                             </af:showDetailItem>
 
                             <af:showDetailItem text="Selection" id="sdi2">
-                                <jsp:include page="/Selection.jsff"/>
+                                <af:declarativeComponent id="dc2" viewId="/Selection.jsff"/>
                             </af:showDetailItem>
 
                             <af:showDetailItem text="Advanced Selection" id="sdi24">
-                                <jsp:include page="/AdvancedSelection.jsff"/>
+                                <af:declarativeComponent id="dc3" viewId="/AdvancedSelection.jsff"/>
                             </af:showDetailItem>
 
                             <af:showDetailItem text="Text" id="sdi4">
-                                <jsp:include page="/Text.jsff"/>
+                                <af:declarativeComponent id="dc4" viewId="/Text.jsff"/>
                             </af:showDetailItem>
 
                         </af:panelTabbed>
