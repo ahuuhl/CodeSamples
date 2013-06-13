@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+
+    <af:panelGroupLayout id="pgl20" layout="scroll">
+    
+        <af:outputText id="ot98" value="&lt;af:selectBooleanCheckbox&gt;" />
+        <af:selectBooleanCheckbox text="Simple boolean checkbox" label="Label"
+                                  id="sbc1"/>
+        <af:separator id="s1"/>
+    
+        <af:outputText id="ot99" value="&lt;af:selectManyCheckbox&gt;" />
+        <af:selectManyCheckbox label="Label" id="smc1">
+            <af:selectItem label="First" value="1" id="si2"/>
+            <af:selectItem label="Second" value="2" id="si3"/>
+            <af:selectItem label="Third" value="3" id="si4"/>
+        </af:selectManyCheckbox>
+        <af:separator id="s2"/>
+    
+        <af:outputText id="ot97" value="&lt;af:selectOneChoice&gt;" />
+        <af:selectOneChoice label="Label 1" id="soc1">
+            <af:selectItem label="First" value="1" id="si5"/>
+            <af:selectItem label="Second" value="2" id="si6"/>
+            <af:selectItem label="Third" value="3" id="si7"/>
+        </af:selectOneChoice>
+        <af:separator id="s3"/>
+    
+        <af:outputText id="ot96" value="&lt;af:selectManyChoice&gt;" />
+        <af:selectManyChoice label="Label 1" id="smc2">
+            <af:selectItem label="First" value="1" id="si8"/>
+            <af:selectItem label="Second" value="2" id="si9"/>
+            <af:selectItem label="Third" value="3" id="si10"/>
+        </af:selectManyChoice>
+        <af:separator id="s4"/>
+    
+        <af:goLink text="&lt;af:selectOneListbox&gt;" id="gl4"
+                   destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectOneListbox.html"/>
+        <af:selectOneListbox label="Label 1" id="sol1">
+            <af:selectItem label="First" value="1" id="si11"/>
+            <af:selectItem label="Second" value="2" id="si12"/>
+            <af:selectItem label="Third" value="3" id="si13"/>
+        </af:selectOneListbox>
+        <af:separator id="s10"/>
+        
+        <af:goLink text="&lt;af:selectManyListbox&gt;" id="gl5"
+                   destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectManyListbox.html"/>
+        <af:selectManyListbox label="Label 1" id="sml1">
+            <af:selectItem label="First" value="1" id="si14"/>
+            <af:selectItem label="Second" value="2" id="si15"/>
+            <af:selectItem label="Third" value="3" id="si16"/>
+        </af:selectManyListbox>
+        <af:separator id="s11"/>
+    
+        <af:goLink text="&lt;af:selectOneRadio&gt;" id="gl51"
+                   destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectOneRadio.html"/>
+        <af:selectOneRadio label="Label 1" id="sor1">
+            <af:selectItem label="First" value="1" id="si17"/>
+            <af:selectItem label="Second" value="2" id="si18"/>
+            <af:selectItem label="Third" value="3" id="si19"/>
+        </af:selectOneRadio>
+        <af:separator id="s12"/>
+    
+        <af:goLink text="&lt;af:selectBooleanRadio&gt;" id="gl52"
+                   destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectBooleanRadio.html"/>
+        <af:selectBooleanRadio text="1" label="First" id="sbr1"
+                               group="g1"/>
+        <af:selectBooleanRadio text="2" label="Second" id="sbr2"
+                               group="g1"/>
+        <af:selectBooleanRadio text="3" label="Third" id="sbr3"
+                               group="g1"/>
+    
+    </af:panelGroupLayout>
+
+</jsp:root>

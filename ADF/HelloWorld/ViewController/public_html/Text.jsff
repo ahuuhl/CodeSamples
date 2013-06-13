@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" 
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core">
+     
+     
+     
+                                      <af:panelGroupLayout id="pgl21" layout="scroll">
+
+                                    <af:goLink text="&lt;af:inputNumberSpinbox&gt;" id="gl40"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputNumberSpinbox.html"/>
+                                    <af:inputNumberSpinbox label="Age" id="ins1" value="42" minimum="1" maximum="130"/>
+                                    <af:separator id="s100"/>
+
+                                    <af:goLink text="&lt;af:inputNumberSlider&gt;" id="gl41"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputNumberSlider.html"/>
+                                    <af:inputNumberSlider label="Label 1" id="ins2"/>
+                                    <af:separator id="s110"/>
+
+                                    <af:goLink text="&lt;af:inputRangeSlider&gt;" id="gl42"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputRangeSlider.html"/>
+                                    <af:inputRangeSlider label="Label 1" id="irs1" orientation="vertical"/>
+                                    <af:separator id="s111"/>
+
+                                    <af:goLink text="&lt;af:inputText&gt;" id="gl6"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputText.html"/>
+                                    <af:inputText label="User" id="it1"/>
+                                    <af:inputText label="Password" id="it2" secret="true" />
+                                    <af:inputText label="Comment" id="it3" rows="3" />
+                                    <af:separator id="s101"/>
+
+                                    <af:goLink text="&lt;af:message&gt;" id="gl7"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_message.html"/>
+                                    <af:message id="m2" messageType="error" message="Fatal Error, shutting down ...."/>
+                                    <af:separator id="s102"/>
+
+                                    <af:goLink text="&lt;af:messages&gt;" id="gl8"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_messages.html"/>
+                                    <af:messages id="m3" text="Warning" message="Some warning message"/>
+                                    <af:separator id="s103"/>
+
+                                    <af:goLink text="&lt;af:outputText&gt;" id="gl9"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_outputText.html"/>
+                                    <af:outputText value="Simple output text" id="ot12"
+                                                   inlineStyle="font-size:15px; font-style:italic; font-weight:bold;"/>
+                                    <af:separator id="s104"/>
+
+                                    <af:goLink text="&lt;af:activeOutputText&gt;" id="gl10"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_activeOutputText.html"/>
+                                    <af:activeOutputText value="Like Simple output text, but allows server side change of the value" id="aot1"
+                                                         inlineStyle="color:Orange; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-style:oblique;"/>
+                                    <af:separator id="s105"/>
+
+                                    <af:goLink text="&lt;af:outputFormatted&gt;" id="gl11"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_outputFormatted.html"/>
+                                    <af:outputFormatted value="Output text which supports simple &lt;b&gt;HTML&lt;/b&gt; markup, like &lt;ol&gt; &lt;li&gt;b&lt;/li&gt; &lt;li&gt;li, ol, ul&lt;/li&gt; &lt;li&gt;...&lt;/li&gt; &lt;/ol&gt;" id="of1"/>
+                                    <af:separator id="s107"/>
+
+                                    <af:goLink text="&lt;af:outputLabel&gt;" id="gl12"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_outputLabel.html"/>
+                                    <af:outputLabel value="Separate label for input fields (used when the default label is not sufficient)" id="ol1"/>
+                                    <af:separator id="s108"/>
+
+                                    <af:goLink text="&lt;af:richTextEditor&gt;" id="gl13"
+                                               destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_richTextEditor.html"/>
+                                    <af:richTextEditor label="Label 1" id="rte1"/>
+
+                                </af:panelGroupLayout>
+
+          
+</jsp:root>
+

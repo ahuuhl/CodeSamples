@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+
+    <af:panelGroupLayout id="pgl211" layout="scroll">
+    
+        <af:outputText id="ot95" value="&lt;af:chooseColor&gt;" />
+        <af:chooseColor id="cc1"/>
+        <af:outputText id="ot94" value="&lt;af:inputColor&gt;" />
+        <af:inputColor label="Label 1" id="ic1"/>
+        <af:separator id="s5"/>
+    
+        <af:outputText id="ot93" value="&lt;af:chooseDate&gt;" />
+        <af:chooseDate id="cd1"/>
+        <af:outputText id="ot92" value="&lt;af:inputDate&gt;" />
+        <af:inputDate label="Label 1" id="id1"/>
+        <af:separator id="s6"/>
+    
+        <af:outputText id="ot91" value="&lt;af:inputFile&gt;" />
+        <af:inputFile label="Label 1" id="if1"/>
+        <af:separator id="s7"/>
+    
+        <af:goLink text="&lt;af:inputListOfValues&gt;" id="gl2"
+                   destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputListOfValues.html"/>
+        <af:inputListOfValues label="Label 1" popupTitle="Search and Result Dialog"
+                              id="ilov1"/>
+        <af:separator id="s8"/>
+    
+        <af:goLink text="&lt;af:inputComboboxListOfValues&gt;" id="gl3"
+                   destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_inputComboboxListOfValues.html"/>
+        <af:inputComboboxListOfValues label="Label 1" popupTitle="Search and Result Dialog"
+                                      id="iclov1"/>
+        <af:separator id="s9"/>
+    
+        <af:goLink text="&lt;af:selectManyShuttle&gt;" id="gl34"
+                   destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectManyShuttle.html"/>
+        <af:selectManyShuttle label="Label 1" id="sms1">
+            <af:selectItem label="First" value="1" id="si20"/>
+            <af:selectItem label="Second" value="2" id="si21"/>
+            <af:selectItem label="Third" value="3" id="si22"/>
+        </af:selectManyShuttle>
+        <af:separator id="s95"/>
+    
+        <af:goLink text="&lt;af:selectOrderShuttle&gt;" id="gl35"
+                   destination="http://docs.oracle.com/cd/E37975_01/apirefs.111240/e17491/tagdoc/af_selectOrderShuttle.html"/>
+        <af:selectOrderShuttle label="Label 1" id="sos1">
+            <af:selectItem label="First" value="1" id="si23"/>
+            <af:selectItem label="Second" value="2" id="si24"/>
+            <af:selectItem label="Third" value="3" id="si25"/>
+        </af:selectOrderShuttle>
+    
+    </af:panelGroupLayout>
+
+</jsp:root>
