@@ -4,15 +4,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <f:view>
         <af:document title="Components" id="d1">
-           <af:resource type="javascript">
-              function cancelEvent(event) {
-                // event.cancel();
-
-                var source = event.getSource();
-                alert(source.toString());
-                source.setDisclosed(true);
-              }
-            </af:resource>
 
             <af:form id="f1" usesUpload="true">
                 <af:pageTemplate viewId="/oracle/templates/threeColumnTemplate.jspx" id="pt1">
@@ -26,12 +17,10 @@
                                  Use <af:declarativeComponent> instead.
                             -->
                             <af:showDetailItem text="Buttons&amp;Links" id="sdi1" binding="#{ComponentBean.detailItem}">
-                                <af:clientListener type="disclosure" method="cancelEvent"/>
                                 <af:declarativeComponent id="dc0" viewId="/ButtonsAndLinks.jsff"/>
                             </af:showDetailItem>
-git
+
                             <af:showDetailItem text="Various" id="sdi3">
-                                <af:clientListener type="disclosure" method="cancelEvent"/>
                                 <af:declarativeComponent id="dc1" viewId="/Various.jsff"/>
                             </af:showDetailItem>
 
